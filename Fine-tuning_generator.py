@@ -56,7 +56,7 @@ def main():
     parser.add_argument('--max_grad_norm', default=1.0, type=float, required=False)
     parser.add_argument('--num_pieces', default=100, type=int, required=False, help='pieces number')
     parser.add_argument('--output_dir', default='/Generator/model/', type=str, required=False, help='model out path')
-    parser.add_argument('--pretrained_model', default='', type=str, required=False, help='pretrained model path')
+    parser.add_argument('--pretrained_model', default='/AMP_models/ProteoGPT/', type=str, required=False, help='pretrained model path')
     parser.add_argument('--writer_dir', default='/Generator/tensorboard_summary', type=str, required=False, help='Tensorboard path')
 
 
