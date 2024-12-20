@@ -40,8 +40,8 @@ def build_files(data_path, tokenized_data_path, num_pieces, full_tokenizer):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--device', default='0,1,2,3', type=str, required=False, help='GPU or not')
-    parser.add_argument('--model_config', default='/AMP_models/model_config.json', type=str, required=False, help='model parameters')
-    parser.add_argument('--raw_data_path', default='/data/sequences.json', type=str, required=False, help='raw data')
+    parser.add_argument('--model_config', default='/model_config.json', type=str, required=False, help='model parameters')
+    parser.add_argument('--raw_data_path', default='/data/Sequences.json', type=str, required=False, help='raw data')
     parser.add_argument('--tokenized_data_path', default='/Generator/tokenized/', type=str, required=False, help='tokenized data')
     parser.add_argument('--raw', action='store_true', help='tokenize or not')
     parser.add_argument('--epochs', default=8, type=int, required=False, help='training loop')
