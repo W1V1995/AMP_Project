@@ -29,9 +29,25 @@ Ensure that all dependencies are installed by following the installation instruc
 
 ## Usage
 
+### Fine-tuning
+
+To create a classifier by fine-tuning, execute the following command:
+
+```bash
+sh Fine-tuning_classifier.sh
+```
+
+To create a generator by fine-tuning, execute the following command:
+
+```bash
+sh Fine-tuning_generator.sh
+```
+
+Parameters such as `batch_size`, `epochs`, etc., and output path can be customized.
+
 ### AMP Generation
 
-To generate sequences using AmpGenix, run the following command:
+To generate sequences using AmpGenix, run:
 
 ```bash
 sh AmpGenix.sh
