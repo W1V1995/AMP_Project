@@ -1,0 +1,11 @@
+python pepGPT_train.py \
+      --tokenized_data_path /Generator/tokenized/ \
+      --raw_data_path /data/sequences.json \
+      --batch_size 8 \
+      --epochs 30 \
+      --stride 64 \
+      --output_dir /Generator/model/ \
+      --num_pieces 10 \
+      --raw \
+      --pretrained_model /AMP_models/ProteoGPT/ \
+      --writer_dir /Generator/tensorboard_summary_amp/
