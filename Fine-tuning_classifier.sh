@@ -1,5 +1,5 @@
 python pepGPT_classifier.py \
-      --raw_data_path /mnt/nfs/5110v5/pepmodel/data/amp_nonamp/train_dat.csv \
+      --raw_data_path /Data/train_dat.csv \
       --batch_size 512 \
       --epochs 20 \
       --model_path /AMP_models/ProteoGPT/ \
