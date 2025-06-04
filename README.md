@@ -75,6 +75,16 @@ sh BioToxiPept.sh
 
 Adjustable parameters are `batch_size`, `raw_data_path`, `model_path`, `classifier_path`, `output_path`, `candidate_pep_path`, etc.
 
+### QSAR Prediction
+
+To predict the antimicrobial activity of short peptides based on charged residues and hydrophobic residues, use:
+
+```bash
+python QSAR.py
+```
+
+Adjustable parameters are `samples_path`,  `output_path`.
+
 ## Data Preparation
 
 To utilize AmpSorter or BioToxiPept for predictions, prepare a CSV file containing your sequence data. Ensure the file includes a column named "Sequence". Example format:
