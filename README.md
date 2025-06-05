@@ -3,8 +3,8 @@
 This repository contains a suite of Large Language Models (LLMs) designed for high-throughput mining and generation of antimicrobial peptides (AMPs). Each model serves a unique purpose in the discovery and evaluation of potential AMPs:
 
 - **ProteoGPT**: A pre-trained model for generating and analyzing amino acid sequences.
-- **AmpGenix**: A sequence generator capable of producing potential AMP sequences.
-- **AmpSorter**: A classifier designed to identify AMPs from peptide datasets.
+- **AMPGenix**: A sequence generator capable of producing potential AMP sequences.
+- **AMPSorter**: A classifier designed to identify AMPs from peptide datasets.
 - **BioToxiPept**: A classifier aimed at determining the cytotoxicity of short peptides.
 
 All models and config files can be downloaded from [here](https://drive.google.com/drive/folders/19cOtRtZzU3JAglaRFLbc5M1aMmjYTUgV?usp=drive_link). 
@@ -47,20 +47,20 @@ Parameters such as `batch_size`, `epochs`, etc., and output path can be customiz
 
 ### AMP Generation
 
-To generate sequences using AmpGenix, run:
+To generate sequences using AMPGenix, run:
 
 ```bash
-sh AmpGenix.sh
+sh AMPGenix.sh
 ```
 
 Parameters such as `ntokens`, `nsamples`, `prefix`, `model_path`, `save_samples_path`, etc., can be adjusted as per your requirements.
 
 ### AMP Prediction
 
-For identifying AMPs from a peptide dataset using AmpSorter, execute:
+For identifying AMPs from a peptide dataset using AMPSorter, execute:
 
 ```bash
-sh AmpSorter_predictor.sh
+sh AMPSorter_predictor.sh
 ```
 
 Customize parameters including `batch_size`, `raw_data_path`, `model_path`, `classifier_path`, `output_path`, `candidate_amp_path`, etc., to fit your dataset and path.
