@@ -1,4 +1,4 @@
-python pepGPT_train.py \
+python Fine-tuning_generator.py \
       --tokenized_data_path /Generator/tokenized/ \
       --raw_data_path /data/sequences.json \
       --batch_size 8 \
