@@ -1,4 +1,4 @@
-python AmpGenix.py \
+python AMPGenix.py \
   --device 0 \
   --ntokens 8-15 \
   --nsamples 100 \
