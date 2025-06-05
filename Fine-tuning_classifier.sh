@@ -1,4 +1,4 @@
-python pepGPT_classifier.py \
+python Fine-tuning_classifier.py \
       --raw_data_path /Data/train_dat.csv \
       --batch_size 512 \
       --epochs 20 \
