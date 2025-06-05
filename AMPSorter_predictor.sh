@@ -1,4 +1,4 @@
-python AmpSorter_predictor.py \
+python AMPSorter_predictor.py \
       --batch_size 200 \
       --raw_data_path /Data/Sequence.csv \
       --model_path /AMP_models/ProteoGPT/ \
