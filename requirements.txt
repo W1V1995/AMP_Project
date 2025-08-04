@@ -7,3 +7,4 @@ sklearn=1.2.2
 ml_things=0.0.1
 matplotlib=3.4.3
 json=2.0.9
+python=3.8.13
