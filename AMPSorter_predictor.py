@@ -134,7 +134,7 @@ def main():
 
     #load th best model
     model.load_state_dict(torch.load(classifier_path, map_location=torch.device('cpu')))
-
+    model.eval()
     # Load model to defined device.
     model.to(device)
     print('Model loaded to `%s`' % device)
@@ -151,7 +151,7 @@ def main():
     print('Created `predicted_set` with %d examples!' % len(predicted_set))
 
     # Move pytorch dataset into dataloader.
-    predicted_dataloader = DataLoader(predicted_set, batch_size=batch_size, shuffle=True,
+    predicted_dataloader = DataLoader(predicted_set, batch_size=batch_size, shuffle=FALSE,
                                   collate_fn=gpt2_classificaiton_collator)
     print('Created `predicted_dataloader` with %d batches!' % len(predicted_dataloader))
 
